@@ -97,8 +97,66 @@ body {
   background-color: var(--orange-color);
   border: none;
 }
+.nav-button:hover {
+  color: #ffff;
+  background-color: var(--skyblue-color);
+  transition: all 0.3s ease;
+}
 /* navbar design end */
-
+/* start banner design */
+.banner-container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+.banner-container-left {
+  margin: 7.5rem 0rem;
+  width: 50%;
+}
+.banner-container-left-title {
+  font-size: 3.5rem;
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+}
+.banner-container-left-title-Empowering {
+  color: var(--orange-color);
+}
+.banner-container-left-title-towards-vision {
+  color: var(--skyblue-color);
+}
+.banner-container-left-description {
+  font-family: "Quicksand", serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.banner-container-left-btn {
+  border: none;
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  padding: 0.7rem 3rem;
+  margin-top: 1.5rem;
+  border-radius: 12px;
+  background-color: var(--black-color);
+  color: #ffff;
+  font-size: 1.2rem;
+}
+.banner-btn {
+  display: flex;
+}
+.banner-container-left-btn:hover {
+  background-color: var(--skyblue-color);
+  color: #ffff;
+  transition: all 0.3s ease;
+}
+.banner-container-right {
+  margin-top: 1rem;
+  width: 50%;
+  text-align: end;
+}
+/* responsive*/
 @media (max-width: 576px) {
   .nav-container {
     max-width: 100%;
@@ -125,6 +183,35 @@ body {
     display: block;
 
     margin-right: 1rem;
+  }
+  .banner-container {
+    max-width: 90%;
+    gap: 0px;
+
+    flex-direction: column;
+  }
+  .banner-container-right > img {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .banner-container-right:nth-child(2) {
+    order: -1;
+  }
+  .banner-container-left {
+    margin: 1rem 0rem;
+    width: 100%;
+  }
+  .banner-container-left-title {
+    font-size: 2.5rem;
+    text-align: center;
+    display: block;
+  }
+  .banner-container-left-description {
+    text-align: center;
+  }
+  .banner-btn {
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
@@ -163,6 +250,19 @@ body {
     background-color: var(--orange-color);
     border: none;
   }
+  .banner-container {
+    max-width: 98%;
+    gap: 0px;
+  }
+  .banner-container-left-title {
+    font-size: 1.5rem;
+  }
+  .banner-container-left {
+    margin: 5rem 0rem;
+  }
+  .banner-container-right > img {
+    width: 80%;
+  }
 }
 @media (min-width: 769px) and (max-width: 992px) {
   .nav-container {
@@ -200,6 +300,19 @@ body {
     background-color: var(--orange-color);
     border: none;
   }
+  .banner-container {
+    max-width: 95%;
+    gap: 0px;
+  }
+  .banner-container-left-title {
+    font-size: 2.5rem;
+  }
+  .banner-container-left {
+    margin: 5rem 0rem;
+  }
+  .banner-container-right > img {
+    width: 80%;
+  }
 }
 @media (min-width: 993px) and (max-width: 1200px) {
   .nav-container {
@@ -225,6 +338,9 @@ body {
     font-weight: 500;
     font-size: 1.5rem;
   }
+  .nav-menu-item-1 > a {
+    font-weight: 700;
+  }
   .nav-button {
     margin-top: 1rem;
     padding: 0.5rem 2rem;
@@ -233,5 +349,18 @@ body {
     color: #ffff;
     background-color: var(--orange-color);
     border: none;
+  }
+  .banner-container {
+    max-width: 95%;
+    gap: 0px;
+  }
+  .banner-container-left-title {
+    font-size: 3rem;
+  }
+  .banner-container-left {
+    margin: 5rem 0rem;
+  }
+  .banner-container-right > img {
+    width: 80%;
   }
 }
