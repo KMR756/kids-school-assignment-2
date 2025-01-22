@@ -28,7 +28,7 @@
 }
 body {
   box-sizing: border-box;
-  width: 100vw;
+
   background-color: var(--white-color);
 }
 /* navbar design start */
@@ -156,11 +156,132 @@ body {
   width: 50%;
   text-align: end;
 }
-/* responsive*/
+/* banner part design end  */
+/* marquee part start */
+.marquee-container-main {
+  display: flex;
+  justify-content: center;
+}
+.marquee-container {
+  width: 60%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 10px 0;
+}
+
+.marquee {
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 24px;
+
+  color: var(--orange-color);
+  text-transform: uppercase;
+  animation: scroll-left 10s linear infinite;
+  letter-spacing: 2px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+/* marquee part end */
+/* carriculum part design start */
+.carriculum-container {
+  margin: 0 auto;
+  max-width: 100%;
+  background-image: url("../bg.png");
+}
+.carriculum-container-title {
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  padding-top: 3.7rem;
+  font-size: 2.8rem;
+  color: var(--black-color);
+}
+.carriculum-container-items {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 1.8rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+.carriculum-container-card {
+  text-align: center;
+
+  padding-bottom: 3.3rem;
+  margin-top: 5rem;
+}
+.carriculum-card-1 {
+  background: linear-gradient(to bottom, #def5ff, #ffffff);
+  box-shadow: 0px 0px 0px rgba(79, 89, 94, 1);
+  border-radius: 18px;
+}
+.carriculum-card-2 {
+  background: linear-gradient(to bottom, #fff4dc, #ffffff);
+
+  box-shadow: 0px 0px 0px rgba(255, 244, 220, 1);
+  border-radius: 18px;
+}
+.carriculum-card-3 {
+  background: linear-gradient(to bottom, #eee1ff, #ffffff);
+  box-shadow: 0px 0px 0px rgba(238, 225, 255, 1);
+  border-radius: 18px;
+}
+.carriculum-container-card-img {
+  padding: 3.3rem 7.2rem 0rem 7.2rem;
+}
+.carriculum-container-card-title {
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: #202020;
+}
+.carriculum-container-card-description {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  margin: 2rem 2.5rem;
+  font-size: 1rem;
+  color: #808080;
+}
+.carriculum-container-card-btn {
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  /* margin: 20px 20px; */
+  font-weight: 1rem;
+  border: none;
+}
+.carriculum-btn-1 {
+  color: #64c8ff;
+  text-decoration: none;
+}
+.carriculum-btn-2 {
+  color: #f0aa00;
+  text-decoration: none;
+}
+.carriculum-btn-3 {
+  color: #8700ff;
+  text-decoration: none;
+}
+/* carriculum part design end */
+
+/* responsive for X-small*/
 @media (max-width: 576px) {
+  /* responsive nav start */
   .nav-container {
     max-width: 100%;
-
     margin-top: 1rem;
     border-bottom: 1px solid var(--orange-color);
   }
@@ -184,6 +305,9 @@ body {
 
     margin-right: 1rem;
   }
+  /* responsive nav end */
+
+  /* responsive banner start */
   .banner-container {
     max-width: 90%;
     gap: 0px;
@@ -213,8 +337,31 @@ body {
     justify-content: center;
     align-items: center;
   }
+  /* responsive banner end */
+  /* responsive carriculum part design start */
+  .carriculum-container-title {
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+  .carriculum-container-items {
+    gap: 0.2rem;
+    /* margin-bottom: 0.2rem; */
+    /* padding-bottom: 0.3rem; */
+    flex-direction: column;
+  }
+  .carriculum-container-card {
+    margin-top: 2rem;
+  }
+  /* responsive carriculum part design end */
 }
+
+/* responsive for small*/
 @media (min-width: 577px) and (max-width: 768px) {
+  /* responsive nav start */
   .nav-container {
     max-width: 98%;
     margin: 0 auto;
@@ -250,6 +397,9 @@ body {
     background-color: var(--orange-color);
     border: none;
   }
+  /* responsive nav end */
+
+  /* responsive banner start */
   .banner-container {
     max-width: 98%;
     gap: 0px;
@@ -263,9 +413,37 @@ body {
   .banner-container-right > img {
     width: 80%;
   }
+  /* responsive banner end */
+  /* responsive carriculum part design start */
+  .carriculum-container-title {
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+  .carriculum-container-items {
+    gap: 0.2rem;
+    /* margin-bottom: 0.2rem; */
+    /* padding-bottom: 0.3rem; */
+    flex-direction: column;
+  }
+  .carriculum-container-card {
+    margin-top: 2rem;
+  }
+  .carriculum-container-card-title {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
+
+  /* responsive carriculum part design end */
 }
+
+/* responsive for medium*/
 @media (min-width: 769px) and (max-width: 992px) {
   .nav-container {
+    /* responsive nav start */
     max-width: 95%;
     margin: 0 auto;
   }
@@ -300,6 +478,9 @@ body {
     background-color: var(--orange-color);
     border: none;
   }
+  /* responsive nav end */
+
+  /* responsive banner start */
   .banner-container {
     max-width: 95%;
     gap: 0px;
@@ -313,8 +494,36 @@ body {
   .banner-container-right > img {
     width: 80%;
   }
+  /* responsive banner end */
+  /* responsive carriculum part design start */
+  .carriculum-container-title {
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+  .carriculum-container-items {
+    gap: 0.2rem;
+    /* margin-bottom: 0.2rem; */
+    /* padding-bottom: 0.3rem; */
+    flex-direction: column;
+  }
+  .carriculum-container-card {
+    margin-top: 2rem;
+  }
+  .carriculum-container-card-title {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
+
+  /* responsive carriculum part design end */
 }
+
+/* responsive for large*/
 @media (min-width: 993px) and (max-width: 1200px) {
+  /* responsive nav start */
   .nav-container {
     max-width: 95%;
     margin: 0 auto;
@@ -350,6 +559,9 @@ body {
     background-color: var(--orange-color);
     border: none;
   }
+  /* responsive nav end */
+
+  /* responsive banner start */
   .banner-container {
     max-width: 95%;
     gap: 0px;
@@ -363,4 +575,29 @@ body {
   .banner-container-right > img {
     width: 80%;
   }
+  /* responsive banner end */
+  /* responsive carriculum part design start */
+  .carriculum-container-title {
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 1rem;
+  }
+  .carriculum-container-items {
+    gap: 0.2rem;
+    /* margin-bottom: 0.2rem; */
+    /* padding-bottom: 0.3rem; */
+    flex-direction: column;
+  }
+  .carriculum-container-card {
+    margin-top: 2rem;
+  }
+  .carriculum-container-card-title {
+    margin-top: 1rem;
+    font-size: 0.5rem;
+  }
+
+  /* responsive carriculum part design end */
 }
