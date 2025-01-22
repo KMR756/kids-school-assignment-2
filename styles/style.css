@@ -276,8 +276,199 @@ body {
   color: #8700ff;
   text-decoration: none;
 }
-/* carriculum part design end */
+.arrow {
+  display: block;
+  max-width: 80%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.arrow > svg {
+  height: "5.6rem";
+  width: "8rem";
+}
 
+.arrow > svg:hover {
+  fill: #01acfd;
+  transition: all 0.5s ease;
+}
+.our-stories {
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  margin: 0 auto;
+  max-width: 100%;
+  background: linear-gradient(
+      to top,
+      rgb(233, 195, 129),
+      rgba(255, 255, 255, 0)
+    ),
+    url("../bg.png");
+}
+.our-stories-title {
+  font-size: 2.8rem;
+  margin: 3.7rem auto;
+  max-width: 80%;
+  display: flex;
+  justify-content: center;
+}
+.our-stories-card {
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+.our-stories-card > img {
+  border-radius: 16px 16px 0px 0px;
+  width: 100%;
+}
+.our-stories-cards {
+  max-width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+  row-gap: 0;
+}
+.stories-card-1 {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.stories-card-2 {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.stories-card-3 {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.stories-card-4 {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  margin-top: 1.5rem;
+}
+.stories-card-5 {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  margin-top: 1.5rem;
+}
+
+.our-stories-card-btn-1 {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  border: none;
+  background-color: #3cd8e8;
+  color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  position: relative;
+  left: 2.3rem;
+  bottom: 1.6rem;
+}
+.our-stories-card-btn-2 {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  border: none;
+  background-color: #95b226;
+  color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  position: relative;
+  left: 2.3rem;
+  bottom: 1.6rem;
+}
+.our-stories-card-btn-3 {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  border: none;
+  background-color: #5d58f0;
+  color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  position: relative;
+  left: 2.3rem;
+  bottom: 1.6rem;
+}
+.our-stories-card-btn-4 {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  border: none;
+  background-color: #95b226;
+  color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  position: relative;
+  left: 2.3rem;
+  bottom: 1.6rem;
+}
+.our-stories-card-btn-5 {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  border: none;
+  background-color: #95b226;
+  color: #ffffff;
+  padding: 0.8rem 1.2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  position: relative;
+  left: 2.3rem;
+  bottom: 1.6rem;
+}
+.our-stories-card-title-1 {
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 1.7rem;
+  margin: 0.8rem 2.3rem 2.3rem 2.3rem;
+}
+.our-stories-card-title {
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  color: #000000;
+  font-size: 1.2rem;
+  margin: 0.8rem 2.3rem 2.3rem 2.3rem;
+}
+.stories-card-1-description {
+  font-family: "Raleway", serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 3rem 4.2rem 2.1rem 2.3rem;
+  color: #666666;
+}
+.stories-card-1 {
+  grid-row: span 3;
+}
+.our-stories-btn-container {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+
+  justify-content: center;
+}
+.our-stories-btn {
+  font-family: "Quicksand", serif;
+  font-weight: 700;
+  color: #ffffff;
+  background-color: var(--black-color);
+  margin-top: 5rem;
+  border: none;
+  margin-bottom: 3.7rem;
+  padding: 0.7rem 3.7rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+}
+.our-stories-btn:hover {
+  color: var(--black-color);
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+/* carriculum part design end */
+/* our stories part start */
+
+/* our stories part end */
 /* responsive for X-small*/
 @media (max-width: 576px) {
   /* responsive nav start */
@@ -364,6 +555,10 @@ body {
   .carriculum-container-card {
     margin-top: 2rem;
   }
+  .arrow {
+    display: none;
+  }
+
   /* responsive carriculum part design end */
   @keyframes scroll-left {
     0% {
@@ -372,6 +567,82 @@ body {
     100% {
       transform: translateX(-100%);
     }
+  }
+  .our-stories {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  .our-stories-cards {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 0.5rem;
+  }
+  .our-stories-title {
+    font-size: 1rem;
+    margin: 1.5rem auto;
+  }
+  .stories-card-1 {
+    display: none;
+  }
+  .our-stories-card-title {
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 0.6rem;
+    margin: 0.8rem 2.3rem 2.3rem 2.3rem;
+  }
+  .our-stories-card-btn-2 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-3 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-4 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-5 {
+    padding: 0.7rem 1.2rem;
+    border-radius: 3rem;
+    font-size: 0.8rem;
+    position: relative;
+    left: 0.5rem;
+    bottom: 1.6rem;
+  }
+  .stories-card-2 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  .stories-card-3 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+  }
+  .stories-card-4 {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    margin-top: 0rem;
+  }
+  .stories-card-5 {
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+    margin-top: 0rem;
   }
 }
 
@@ -453,7 +724,87 @@ body {
     font-size: 0.5rem;
   }
 
+  .arrow > svg {
+    height: 5rem;
+    width: 3.5rem;
+  }
   /* responsive carriculum part design end */
+  .our-stories {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  .our-stories-cards {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 0.5rem;
+  }
+  .our-stories-title {
+    font-size: 1rem;
+    margin: 1.5rem auto;
+  }
+  .stories-card-1 {
+    display: none;
+  }
+  .our-stories-card-title {
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 1rem;
+    margin: 0.8rem 2.3rem 2.3rem 2.3rem;
+  }
+  .our-stories-card-btn-2 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-3 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-4 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-5 {
+    padding: 0.7rem 1.2rem;
+    border-radius: 3rem;
+    font-size: 0.8rem;
+    position: relative;
+    left: 0.5rem;
+    bottom: 1.6rem;
+  }
+  .stories-card-2 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  .stories-card-3 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+  }
+  .stories-card-4 {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    margin-top: 0rem;
+  }
+  .stories-card-5 {
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+    margin-top: 0rem;
+  }
 }
 
 /* responsive for medium*/
@@ -533,8 +884,87 @@ body {
     margin-top: 1rem;
     font-size: 0.5rem;
   }
-
+  .arrow > svg {
+    height: 6rem;
+    width: 5rem;
+  }
   /* responsive carriculum part design end */
+  .our-stories {
+    max-width: 100vw;
+    margin: 0 auto;
+  }
+  .our-stories-cards {
+    max-width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* grid-template-rows: 1fr 1fr; */
+    gap: 0.5rem;
+  }
+  .our-stories-title {
+    font-size: 1rem;
+    margin: 1.5rem auto;
+  }
+  .stories-card-1 {
+    display: none;
+  }
+  .our-stories-card-title {
+    font-family: "Quicksand", serif;
+    font-weight: 700;
+    color: #000000;
+    font-size: 1.2rem;
+    margin: 0.8rem 2.3rem 2.3rem 2.3rem;
+  }
+  .our-stories-card-btn-2 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-3 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-4 {
+    padding: 0.8rem 1rem;
+    border-radius: 3rem;
+    font-size: 0.7rem;
+    position: relative;
+    left: 0.3rem;
+    bottom: 1.6rem;
+  }
+  .our-stories-card-btn-5 {
+    padding: 0.7rem 1.2rem;
+    border-radius: 3rem;
+    font-size: 0.8rem;
+    position: relative;
+    left: 0.5rem;
+    bottom: 1.6rem;
+  }
+  .stories-card-2 {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+  }
+  .stories-card-3 {
+    grid-column: 2 / 2;
+    grid-row: 1 / 2;
+  }
+  .stories-card-4 {
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    margin-top: 0rem;
+  }
+  .stories-card-5 {
+    grid-column: 2 / 3;
+    grid-row: 2/3;
+    margin-top: 0rem;
+  }
 }
 
 /* responsive for large*/
@@ -614,6 +1044,37 @@ body {
     margin-top: 1rem;
     font-size: 0.5rem;
   }
+  .our-stories-card-btn-2 {
+    padding: 0.5rem 0.8rem;
 
+    font-size: 0.8rem;
+
+    left: 2rem;
+    bottom: 1.4rem;
+  }
+  .our-stories-card-btn-3 {
+    padding: 0.5rem 0.8rem;
+
+    font-size: 0.8rem;
+
+    left: 2rem;
+    bottom: 1.4rem;
+  }
+  .our-stories-card-btn-4 {
+    padding: 0.5rem 0.8rem;
+
+    font-size: 0.8rem;
+
+    left: 2rem;
+    bottom: 1.4rem;
+  }
+  .our-stories-card-btn-5 {
+    padding: 0.5rem 0.8rem;
+
+    font-size: 0.8rem;
+
+    left: 2rem;
+    bottom: 1.4rem;
+  }
   /* responsive carriculum part design end */
 }
