@@ -211,8 +211,9 @@ body {
 .carriculum-container-items {
   max-width: 80%;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   gap: 1.8rem;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
@@ -282,14 +283,17 @@ body {
   /* responsive nav start */
   .nav-container {
     max-width: 100%;
+
+    border: 1px solid var(--orange-color);
     margin-top: 1rem;
-    border-bottom: 1px solid var(--orange-color);
+    margin-right: 0rem;
   }
 
   .logo-container-img {
     width: 100%;
     margin-left: 1rem;
     margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   .logo-container-text {
     display: none;
@@ -304,6 +308,9 @@ body {
     display: block;
 
     margin-right: 1rem;
+  }
+  .nav-container {
+    margin-top: 0rem;
   }
   /* responsive nav end */
 
@@ -349,14 +356,23 @@ body {
   }
   .carriculum-container-items {
     gap: 0.2rem;
-    /* margin-bottom: 0.2rem; */
-    /* padding-bottom: 0.3rem; */
-    flex-direction: column;
+    max-width: 90%;
+    grid-template-columns: repeat(auto, 1fr);
+    gap: 1.5px;
+    padding: 2.5rem;
   }
   .carriculum-container-card {
     margin-top: 2rem;
   }
   /* responsive carriculum part design end */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(20%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 /* responsive for small*/
@@ -427,7 +443,7 @@ body {
     gap: 0.2rem;
     /* margin-bottom: 0.2rem; */
     /* padding-bottom: 0.3rem; */
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .carriculum-container-card {
     margin-top: 2rem;
@@ -508,7 +524,7 @@ body {
     gap: 0.2rem;
     /* margin-bottom: 0.2rem; */
     /* padding-bottom: 0.3rem; */
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .carriculum-container-card {
     margin-top: 2rem;
@@ -589,7 +605,7 @@ body {
     gap: 0.2rem;
     /* margin-bottom: 0.2rem; */
     /* padding-bottom: 0.3rem; */
-    flex-direction: column;
+    /* flex-direction: column; */
   }
   .carriculum-container-card {
     margin-top: 2rem;
